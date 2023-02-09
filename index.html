@@ -61,7 +61,7 @@
             <tr>
                 <th>1979</th>
                 <td>West Indies</td>
-                <td>286-9</>
+                <td>286-9</td>
                 <td>England</td>
                 <td>194</td> 
                 <td>West Indies won by 92 runs.</td> 
@@ -175,19 +175,19 @@
             <fieldset>
             <legend>Contact Form</legend>
             <label for="full_name">Full Name:</label><br>
-            <input type="text" id="full_name"><br>
+            <input type="text" id="full_name" required><br>
 
             <label for="email">Email:</label><br>
-            <input type="email" id="email"><br>
+            <input type="email" id="email" required><br>
 
             <label for="phone_number">Phone Number:</label><br>
-            <input type="number" id="phone_number"><br>
+            <input type="number" id="phone_number" max="10" required><br>
 
             <label for="password">Password:</label><br>
-            <input type="password" id="password"><br>
+            <input type="password" id="password" required><br>
 
             <label for="confirm_password">Confirm Password:</label><br>
-            <input type="password" id="confirm_password"><br>
+            <input type="password" id="confirm_password" required><br>
 
             <!-- Section for Gender -->
             <label for="select_gender">Select Your Gender:</label><br>
@@ -203,8 +203,7 @@
 
             <!-- Section for favourite player -->
             <label for="playersList">Select your favourite player:</label><br>
-            <input type="text" list="playersList" 
-            placeholder="" />
+            <input type="text" list="playersList" id="playersList"/>
 
             <!-- Creating search-cum dropdown box -->
             <datalist id="playersList">
@@ -224,10 +223,10 @@
             </datalist><br>
              
             <!-- Section for Address -->
-            <label for="">Address</label><br>
+            <label for="Address">Address</label><br>
             <textarea id="Address" name="Address" rows="4" cols="35"></textarea><br> 
-
-      <input type="submit" value="Register" />
+            
+            <input type="submit" value="Register" />
 
         </fieldset>
         </form>
